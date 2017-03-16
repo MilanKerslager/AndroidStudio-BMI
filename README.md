@@ -5,7 +5,7 @@ To clone source to your own Android Studio go to menu File → New → Project f
 use this URL: https://github.com/MilanKerslager/AndroidStudio-BMI.git
 
 See the
-[main program file](AndroidStudio-BMI/app/src/main/java/cz/kerslager/android/bmi/MainActivity.java) (MainActivity.java)
+[main program file](app/src/main/java/cz/kerslager/android/bmi/MainActivity.java) (MainActivity.java)
 
 ## In the Czech language
 Jednoduchá aplikace pro výuku programování pro Android.
@@ -15,4 +15,4 @@ Pro naklonování zdrojových kódů do vašeho Android Studia zvolte v menu pol
 File → New → Project from Version Control → GitHub a použijte odkaz: https://github.com/MilanKerslager/AndroidStudio-BMI.git
 
 Prohlédněte si
-[hlavní soubor s programem](AndroidStudio-BMI/app/src/main/java/cz/kerslager/android/bmi/MainActivity.java) (MainActivity.java)
+[hlavní soubor s programem](app/src/main/java/cz/kerslager/android/bmi/MainActivity.java) (MainActivity.java)
