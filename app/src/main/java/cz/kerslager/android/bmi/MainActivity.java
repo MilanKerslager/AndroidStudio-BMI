@@ -11,6 +11,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
+    // global variables for accessing GUI widgets
     EditText editTextWeight, editTextHeight;
     TextView printBMI;
 
@@ -19,28 +20,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // when activity starts, find pointers to GUI widgets to use them later
         editTextWeight = (EditText) findViewById(R.id.editTextVaha);
         editTextHeight = (EditText) findViewById(R.id.editTextVyska);
         printBMI = (TextView) findViewById(R.id.textViewBMI);
     }
 
     public void onButtonVypocti(View view) {
-        Double vaha = 0.0, vyska = 0.0;
+        Double weight = 0.0, height = 0.0;
         try {
-            vaha = Double.parseDouble(editTextWeight.getText().toString());
-            vyska = Double.parseDouble(editTextHeight.getText().toString());
+            // try to parse input form the user
+            weight = Double.parseDouble(editTextWeight.getText().toString());
+            height = Double.parseDouble(editTextHeight.getText().toString());
         } catch (NumberFormatException e) {
-            showError(getString(R.string.input_error));
+            // when unable to parse, show error message by Toast
+            showError(getResources().getString(R.string.input_error));
         }
-        if (vaha != 0 && vyska != 0) {
+        // if we have a data, show the result to the user (only two decimal places)
+        if (weight != 0 && height != 0) {
             printBMI.setText(String.format(Locale.getDefault(),
-                    "%.2f", vaha / Math.pow(vyska / 100, 2)));
+                    "%.2f", weight / Math.pow(height / 100, 2)));
         }
     }
 
-    private void showError(String zprava) {
+    // inform user by Toast message
+    private void showError(String message) {
         Toast myToast = Toast.makeText(
-                getApplication(), zprava,
+                getApplication(), message,
                 Toast.LENGTH_LONG
         );
         myToast.show();
