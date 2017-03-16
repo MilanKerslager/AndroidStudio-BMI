@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="count_it">Vypočti!</string>
+    <string name="height">Výška:</string>
+    <string name="height_in_cm">Výška v cm</string>
+    <string name="unknown_value">neznámá hodnota</string>
+    <string name="weight">Váha:</string>
+    <string name="weight_in_kg">Váha v kg</string>
+    <string name="input_error">Chyba vstupu!</string>
+</resources>

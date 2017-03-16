@@ -7,32 +7,34 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
-    EditText editTextVaha, editTextVyska;
-    TextView tiskBMI;
+    EditText editTextWeight, editTextHeight;
+    TextView printBMI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextVaha = (EditText) findViewById(R.id.editTextVaha);
-        editTextVyska = (EditText) findViewById(R.id.editTextVyska);
-        tiskBMI = (TextView) findViewById(R.id.textViewBMI);
+        editTextWeight = (EditText) findViewById(R.id.editTextVaha);
+        editTextHeight = (EditText) findViewById(R.id.editTextVyska);
+        printBMI = (TextView) findViewById(R.id.textViewBMI);
     }
 
-    public void onButtonKlik(View view) {
+    public void onButtonVypocti(View view) {
         Double vaha = 0.0, vyska = 0.0;
         try {
-            vaha = Double.parseDouble(editTextVaha.getText().toString());
-            vyska = Double.parseDouble(editTextVyska.getText().toString());
+            vaha = Double.parseDouble(editTextWeight.getText().toString());
+            vyska = Double.parseDouble(editTextHeight.getText().toString());
         } catch (NumberFormatException e) {
-            showError("Chybný vstup!");
+            showError(getString(R.string.input_error));
         }
         if (vaha != 0 && vyska != 0) {
-            tiskBMI.setText(String.format("%.2f",
-                    vaha / Math.pow(vyska / 100, 2)));
+            printBMI.setText(String.format(Locale.getDefault(),
+                    "%.2f", vaha / Math.pow(vyska / 100, 2)));
         }
     }
 

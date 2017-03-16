@@ -1,10 +1,11 @@
 <resources>
-    <string name="app_name">BMI</string>
-    <string name="vaha">Váha:</string>
-    <string name="vyska">Výška:</string>
-    <string name="bmi">BMI:</string>
-    <string name="vypocet">Vypočti!</string>
-    <string name="neznama">neznámá hodnota</string>
-    <string name="vaha_v_kg">Váha v kg</string>
-    <string name="vyska_v_cm">Výška v cm</string>
+    <string name="app_name" translatable="false">BMI</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="bmi" translatable="false">BMI:</string>
+    <string name="count_it">Count it!</string>
+    <string name="unknown_value">unknown value</string>
+    <string name="weight_in_kg">Weight in kg</string>
+    <string name="height_in_cm">Height in cm</string>
+    <string name="input_error">Input error!</string>
 </resources>
