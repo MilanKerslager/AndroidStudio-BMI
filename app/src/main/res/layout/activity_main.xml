@@ -30,7 +30,10 @@
         android:textAlignment="textEnd"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextVyska"
-        app:layout_constraintRight_toRightOf="@+id/textView" />
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/editTextVaha"
