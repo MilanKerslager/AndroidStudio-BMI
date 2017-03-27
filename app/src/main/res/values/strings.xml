@@ -3,9 +3,18 @@
     <string name="weight">Weight:</string>
     <string name="height">Height:</string>
     <string name="bmi" translatable="false">BMI:</string>
-    <string name="count_it">Count it!</string>
+    <string name="count_it">Calculate!</string>
     <string name="unknown_value">unknown value</string>
     <string name="weight_in_kg">Weight in kg</string>
     <string name="height_in_cm">Height in cm</string>
     <string name="input_error">Input error!</string>
+    <string name="pro_vyuku">Aplikace pro výuku programování v systému Android na SPŠSE a VOŠ v Liberci.</string>
+    <string name="bmi_15">Very severely underweight</string>
+    <string name="bmi_16">Severely underweight</string>
+    <string name="bmi_185">Underweight</string>
+    <string name="bmi_25">Normal</string>
+    <string name="bmi_30">Overweight</string>
+    <string name="bmi_35">Moderately obese</string>
+    <string name="bmi_40">Severely obese</string>
+    <string name="bmi_400">Very severely obese</string>
 </resources>

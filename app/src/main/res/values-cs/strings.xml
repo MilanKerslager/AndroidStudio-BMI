@@ -7,4 +7,13 @@
     <string name="weight">Váha:</string>
     <string name="weight_in_kg">Váha v kg</string>
     <string name="input_error">Chyba vstupu!</string>
+    <string name="pro_vyuku">Aplikace pro výuku programování v systému Android na SPŠSE a VOŠ v Liberci.</string>
+    <string name="bmi_185">Podvýživa</string>
+    <string name="bmi_25">Normální</string>
+    <string name="bmi_30">Nadváha</string>
+    <string name="bmi_35">Střední nadváha</string>
+    <string name="bmi_40">Vážná nadváha</string>
+    <string name="bmi_400">Velmi vážná nadváha</string>
+    <string name="bmi_16">Vážná podvýživa</string>
+    <string name="bmi_15">Velmi vážná podvýživa</string>
 </resources>
