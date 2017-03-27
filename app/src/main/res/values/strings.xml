@@ -4,7 +4,7 @@
     <string name="height">Height:</string>
     <string name="bmi" translatable="false">BMI:</string>
     <string name="count_it">Calculate!</string>
-    <string name="unknown_value">unknown value</string>
+    <string name="unknown_value">unknown</string>
     <string name="weight_in_kg">Weight in kg</string>
     <string name="height_in_cm">Height in cm</string>
     <string name="input_error">Input error!</string>
