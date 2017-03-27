@@ -22,3 +22,8 @@
 # Forcibly including certain files we want propagated.
 !\.idea/codeStyleSettings.xml
 !\.idea/copyright
+
+*.apk
+.idea/modules.xml
+.idea/misc.xml
+

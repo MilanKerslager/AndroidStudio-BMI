@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
             textViewBMIverbose.setTextColor(Color.RED);
         } else if (bmi < 18.5) {
             textViewBMIverbose.setText(getResources().getString(R.string.bmi_185));
-            textViewBMIverbose.setTextColor(Color.YELLOW);
+            textViewBMIverbose.setTextColor(Color.rgb(255, 165, 0)); // orange
         } else if (bmi < 25) {
             textViewBMIverbose.setText(getResources().getString(R.string.bmi_25));
             textViewBMIverbose.setTextColor(Color.GREEN);
         } else if (bmi < 30) {
             textViewBMIverbose.setText(getResources().getString(R.string.bmi_30));
-            textViewBMIverbose.setTextColor(Color.YELLOW);
+            textViewBMIverbose.setTextColor(Color.rgb(255, 165, 0)); // orange
         } else if (bmi < 35) {
             textViewBMIverbose.setText(getResources().getString(R.string.bmi_35));
             textViewBMIverbose.setTextColor(Color.YELLOW);
