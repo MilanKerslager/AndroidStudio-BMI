@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         if (weight != 0 && height != 0) {
             textViewBMI.setText(String.format(Locale.getDefault(), "%.2f", bmi));
         }
-        // print verbose meaning of the calculated bmi index
+        // print verbose meaning of the calculated bmi indexx
         if (bmi < 15) {
             textViewBMIverbose.setText(getResources().getString(R.string.bmi_15));
             textViewBMIverbose.setTextColor(Color.RED);
